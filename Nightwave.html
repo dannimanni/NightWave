@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="is">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NIGHTWAVE</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <link rel="stylesheet" href="nightwave.css">
+</head>
+
+<body>
+
+<header class="container">
+    <nav>
+        <ul>
+            <li>
+                <img src="myndir/NIGHTWAVE.svg" alt="NIGHTWAVE logo">
+            </li>
+            <li><strong>NIGHTWAVE</strong></li>
+        </ul>
+        <details class="sima-nav">
+            <summary><img src="myndir/dropdown.svg"></summary>
+            <ul>
+                <li><a href="#heim">Heim</a></li>
+                <li><a href="#dagsskra">Dagskrá</a></li>
+                <li><a href="#midar">Miðar</a></li>
+                <li><a href="#leikur">Leikur</a></li>
+                <li><a href="#samband">Samband</a></li>
+            </ul>
+        </details>
+        <div class="tolvu-nav">
+            <ul>
+                <li><a href="#heim">Heim</a></li>
+                <li><a href="#dagsskra">Dagskrá</a></li>
+                <li><a href="#midar">Miðar</a></li>
+                <li><a href="#leikur">Leikur</a></li>
+                <li><a href="#samband">Samband</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <label id="darkmode" for="dark-mode">Light mode</label>
+    <input type="checkbox" id="dark-mode">
+
+    <h3 class="kvikun">KAUPTU MIÐA Í DAG</h3>
+    <img src="myndir/Festival.jpg" alt="Flott mynd">
+    <section id="heim" class="heima">
+        <div class="container">
+            <p class="nafn">REYKJAVÍK • 20. DESEMBER 2026</p>
+            <h1>NIGHTWAVE</h1>
+            <p>Stór tónlistarviðburður með lifandi tónlist, ljósasýningu og frábærri stemningu.</p>
+            <a href="#midar" role="button">Kaupa miða</a>
+        </div>
+    </section>
+
+    <section id="dagsskra" class="container">
+        <h2>Dagskrá</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Tími</th>
+                    <th>Viðburður</th>
+                    <th>Staðsetning</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>18:00</td>
+                    <td>Húsið opnar</td>
+                    <td>Aðalsalur</td>
+                </tr>
+
+                <tr>
+                    <td>19:00</td>
+                    <td>DJ Show</td>
+                    <td>Aðalsvið</td>
+                </tr>
+
+                <tr>
+                    <td>20:30</td>
+                    <td>Live Show</td>
+                    <td>Aðalsvið</td>
+                </tr>
+
+                <tr>
+                    <td>22:30</td>
+                    <td>Afterparty</td>
+                    <td>VIP-svæði</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="midar" class="container">
+        <h2>Miðar</h2>
+
+        <div class="grid">
+            <article>
+                <h3>Venjulegur</h3>
+                <p class="verd">7.990 kr.</p>
+                <p>Aðgangur að öllum viðburðinum.</p>
+                <button>Kaupa miða</button>
+            </article>
+
+            <article>
+                <h3>VIP</h3>
+                <p class="verd">14.990 kr.</p>
+                <p>VIP-svæði og betri staðsetning.</p>
+                <button>Kaupa miða</button>
+            </article>
+        </div>
+    </section>
+
+    <section id="leikur" class="container">
+        <h2>Viltu vinna VIP miða?</h2>
+        <p>Skráðu þig í leikinn og þú gætir unnið tvo VIP miða á viðburðinn.</p>
+
+        <form>
+            <label>
+                Nafn
+                <input type="text" placeholder="Nafnið þitt" required>
+            </label>
+
+            <label>
+                Netfang
+                <input type="email" placeholder="Netfangið þitt" required>
+            </label>
+
+            <button type="submit">Skrá mig</button>
+        </form>
+    </section>
+
+    <section class="container">
+        <h2>Um viðburðinn</h2>
+
+        <div class="grid">
+            <article>
+                <h3>Hvar?</h3>
+                <p>Laugardalshöll<br>Reykjavík, Ísland</p>
+            </article>
+
+            <article>
+                <h3>Hvenær?</h3>
+                <p>20. desember 2026<br>Húsið opnar kl. 18:00</p>
+            </article>
+
+            <article>
+                <h3>Um okkur</h3>
+                <p>Við skipuleggjum tónlistarviðburði og skemmtun fyrir fólk á öllum aldri.</p>
+            </article>
+        </div>
+    </section>
+
+
+    <section id="samband" class="container">
+
+        <h2>Hafa samband</h2>
+
+        <form>
+
+            <label>
+                Nafn
+                <input type="text" placeholder="Nafnið þitt" required>
+            </label>
+
+            <label>
+                Netfang
+                <input type="email" placeholder="Netfangið þitt" required>
+            </label>
+
+            <label>
+                Skilaboð
+                <textarea placeholder="Skilaboðin þín"></textarea>
+            </label>
+
+            <button type="submit">
+                Senda skilaboð
+            </button>
+
+        </form>
+
+    </section>
+
+</main>
+</body>
+</html>
